@@ -22,18 +22,24 @@ cd ../..
 ```
 
 ## run redis
-docker pull redis/redis-stack-server:latest             #  for lateest redis
+
+```
+docker pull redis/redis-stack-server:latest
 docker run -d --name redis-stack-server -p 6379:6379 redis/redis-stack-server:latest
+```
 
+## run API
 
-## run api
+```
 cd api
 python manage.py runserver 0.0.0.0:8000
+```
+## run chat 
 
-## run chat UI
+```
 open chat in new visual studio
 npx react-native run-android   or  npm start
-
+```
 # Run
 
 ```
